@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    /* FONTS */
+    --fuente-inter: 'Inter', sans-serif;
+
+    /* LIGTH COLORS */
+    --ligth--100: #F3F5FC;
+    --ligth--200: #EFF1FA;
+    --ligth--300: #E9ECF8;
+    --ligth--400: #AAB2D5;
+    --ligth--500: #757FB2;
+
+    /* DARK COLORS */
+    --dark--100: #609ED4;
+    --dark--200: #356EA9;
+    --dark--300: #0A3871;
+    --dark--400: #072B61;
+    --dark--500: #052051;
+
+    /* GRAY COLORS */
+    --gray--100: #F3F5FC;
+    --gray--200: #EFF1FA;
+    --gray--300: #E9ECF8;
+    --gray--400: #AAB2D5;
+    --gray--500: #757FB2;
+    --white--100: #FFFFFF;
+
+    /* FONT WEIGHT */
+    --font-regular: 400;
+    --font-bold: 700;
+
+    /* MARGENES BOTTOM */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /* Z INDEX */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--ligth--100);
+    color: var(--dark--300);
+}
+
+.footer{
+    color:var(--ligth--100);
+    background-color: var(--dark--500);
+    padding: 24px;
+
+    font-family: var(--fuente-inter);
+    font-weight: var(--font-regular);
+    font-size: .5rem;
+}
+
+@media (max-width: 1200px) {
+
+    .header{
+         padding: 10%;  
+    }
+    
+}
