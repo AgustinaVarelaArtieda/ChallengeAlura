@@ -1,5 +1,5 @@
 let textoSinEncriptar = document.getElementById("text__area");
-let mensaje = document.getElementById("mensaje__texto");
+let mensaje = document.getElementById("text__encriptado");
 
 function btnEncriptar(){
     if(textoSinEncriptar.value != ""){
@@ -11,7 +11,7 @@ function btnEncriptar(){
             .replaceAll("u", "ufat");
         mensaje.value = textoEncriptado;
         textoSinEncriptar.value = "";
-
+ 
         console.log(textoEncriptado)
     }else{
         alert("Ingresa el texto que deseas encriptar");

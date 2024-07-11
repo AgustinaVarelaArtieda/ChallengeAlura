@@ -10,33 +10,40 @@
 
 <body>
     <header class="header">
-        <img src="img/logoAlura.png" class="logo">
+        <img src="assets/Logo.png" class="logo" alt="logo Alura">
         <div class="header__toggles">
             <div class="header__toggle__color"></div>
             <div class="header__toggle__dark"></div>
         </div>
     </header>
     <main class="main">
-        <section class="text__input">
+        <section class="section__input">
             <textarea class="text__area" id="text__area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-            <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
-            <div class="botones">
-                <button class="btn__encriptar" onclick="btnEncriptar()">Encriptar</button>
-                <button class="btn__desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            <div class="notext__area">
+                <h6 class="informacion"><span class="bi--exclamation-circle-fill"></span>Solo letras minusculas y sin acentos</h6>
+                <div class="btns_area">
+                    <button class="dark__btn" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="light__btn" disabled onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
             </div>
         </section>
-        <section class="mensaje">
-            <img src="img/niño-sentado.png" class="mensaje__img">
-            <h2>Ningún mensaje fue encontrado</h2>
-            <p class="mensaje__texto" id="mensaje__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
-            <button class="btn__copiar" onclick="copiar()">Copiar</button>
+        <section class="section__mensaje">
+            <img src="assets/Muñeco.png" class="mensaje__img" alt="esperando...">
+            <div class="mensaje__notexto">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p class="mensaje__texto" id="mensaje__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="mensaje__encriptado">
+                <p id="text__encriptado">asdasdas</p>
+                <button class="light__btn" onclick="copiar()">Copiar</button>
+            </div>
         </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <p class="footer__text__copy">© Copyright. All rights reserved.</p>
         <p class="footer__text__autor">Creado por Agustina Varela</p>
         <img src="img/Logo.png" class="footer__logo">
-    </footer>
+    </footer> -->
     
     <script src="app.js" defer></script>
 </body>
