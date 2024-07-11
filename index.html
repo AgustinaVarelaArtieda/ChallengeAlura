@@ -18,24 +18,24 @@
     </header>
     <main class="main">
         <section class="section__input">
-            <textarea class="text__area" id="text__area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <textarea class="text__area" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             <div class="notext__area">
                 <h6 class="informacion"><span class="bi--exclamation-circle-fill"></span>Solo letras minusculas y sin acentos</h6>
                 <div class="btns_area">
-                    <button class="dark__btn" onclick="btnEncriptar()">Encriptar</button>
-                    <button class="light__btn" disabled onclick="btnDesencriptar()">Desencriptar</button>
+                    <button class="dark__btn" value="Encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="light__btn" id="btn-desencriptar" value="Desencriptar" disabled onclick="btnDesencriptar()">Desencriptar</button>
                 </div>
             </div>
         </section>
         <section class="section__mensaje">
-            <img src="assets/Muñeco.png" class="mensaje__img" alt="esperando...">
-            <div class="mensaje__notexto">
-                <h2>Ningún mensaje fue encontrado</h2>
-                <p class="mensaje__texto" id="mensaje__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <img src="assets/Muñeco.png" class="mensaje__img" alt="esperando..." id="img-mensaje">
+            <div class="mensaje__texto" id="no-texto">
+                <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                <p class="mensaje__texto" id="mensaje-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
-            <div class="mensaje__encriptado">
-                <p id="text__encriptado">asdasdas</p>
-                <button class="light__btn" onclick="copiar()">Copiar</button>
+            <div id="espacio-mensaje" class="mensaje__encriptado">
+                <p name="mensaje" id="mensaje" class="texto__encriptado"></p>
+                <button class="light__btn btn__copiar" onclick="copiar()">Copiar</button>
             </div>
         </section>
     </main>

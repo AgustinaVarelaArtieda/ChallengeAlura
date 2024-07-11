@@ -94,6 +94,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
     gap: 32px;
 
     text-align: center;
@@ -104,25 +105,24 @@ body{
 }
 
 .section__mensaje img{
-    display: none;
     width: 336px;
 }
 
-.mensaje__notexto{
-    display: none;
+.mensaje__texto{
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px
 }
 
-.mensaje__notexto h2{
+.mensaje__texto h2{
     font-weight: var(--font-bold);
     font-size: 24px;
 
     color: var(--gray--500);
 }
 
-.mensaje__notexto p{
+.mensaje__texto p{
     font-weight: var(--font-regular);
     font-size: 16px;
 
@@ -133,7 +133,7 @@ body{
     width: 100%;
     height: 100%;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     gap: 32px;
@@ -147,9 +147,13 @@ body{
     overflow: hidden;
 }
 
-.mensaje__encriptado p{
+.texto__encriptado{
+    margin: 0;
+    line-height: 150%;
     white-space: wrap;
     word-wrap: break-word;
+
+    cursor: default;
 }
 
 .text__area{
@@ -183,6 +187,8 @@ body{
     font-size: 12px;
     
     color: var(--gray--400);
+
+    cursor: default;
 }
 
 .bi--exclamation-circle-fill {
